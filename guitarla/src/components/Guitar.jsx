@@ -1,4 +1,4 @@
-export default function Guitar({ guitar, setCart, addToCart}) {
+export default function Guitar({ guitar, addToCart}) {
   // console.log(guitar);
   const { id, name, image, description, price } = guitar;
 
@@ -15,7 +15,7 @@ export default function Guitar({ guitar, setCart, addToCart}) {
       </div>
       <div className="col-8">
         <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
-        <p>{guitar.description}</p>
+        <p>{description}</p>
         <p className="fw-black text-primary fs-3">{price}</p>
         <button
           type="button"
